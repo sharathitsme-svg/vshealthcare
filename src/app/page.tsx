@@ -1,3 +1,7 @@
+"use client";
+import BackToTop from "./components/BackToTop";
+import { useEffect, useState } from "react";
+import Loader from "./components/Loader";
 import ClinicGallery from "./components/ClinicGallery";
 import Footer from "./components/Footer";
 import Conditions from "./components/Conditions";
@@ -13,7 +17,19 @@ import About from "./components/About";
 import Certifications from "./components/Certifications";
 import Appointment from "./components/Appointment";
 
-export default function Home() {
+export default function Home() {const [loading, setLoading] = useState(true);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false);
+  }, 2000);
+
+  return () => clearTimeout(timer);
+}, []);
+
+if (loading) {
+  return <Loader />;
+}
   return (
     <>
       <Navbar />
@@ -30,6 +46,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <FloatingButtons />
+      <BackToTop />
     </>
   );
 }
