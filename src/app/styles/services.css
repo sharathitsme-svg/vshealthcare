@@ -1,0 +1,135 @@
+.services {
+  background: #ffffff;
+  padding: 90px 40px;
+}
+
+.servicesContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.servicesHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.servicesHeader h5 {
+  color: #14b8a6;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.servicesHeader h2 {
+  font-size: 42px;
+  color: #064e3b;
+  margin-bottom: 20px;
+}
+
+.servicesHeader p {
+  max-width: 750px;
+  margin: auto;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: .35s;
+  border-top: 5px solid #0f766e;
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+.serviceIcon {
+  width: 70px;
+  height: 70px;
+  background: #e6fffa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.serviceIcon svg {
+  font-size: 32px;
+  color: #0f766e;
+}
+
+.serviceCard h3 {
+  color: #064e3b;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.serviceCard p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.serviceList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.serviceList li {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.learnMore {
+  color: #0f766e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learnMore:hover {
+  color: #065f46;
+}
+
+.trustBanner {
+  margin-top: 70px;
+  background: #0f766e;
+  color: white;
+  border-radius: 20px;
+  padding: 35px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.trustBanner h4 {
+  margin-top: 10px;
+}
+
+@media(max-width:900px){
+
+.services{
+padding:60px 20px;
+}
+
+.servicesHeader h2{
+font-size:34px;
+}
+
+.trustBanner{
+grid-template-columns:1fr;
+}
+
+}

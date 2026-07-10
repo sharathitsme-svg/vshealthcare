@@ -1,0 +1,186 @@
+/* ============================
+   TESTIMONIALS SECTION
+============================ */
+
+.testimonials {
+  padding: 90px 40px;
+  background: #f8fafc;
+}
+
+.testimonialsContainer {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* ============================
+   Header
+============================ */
+
+.testimonialsHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonialsHeader h5 {
+  color: #14b8a6;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.testimonialsHeader h2 {
+  font-size: 42px;
+  color: #064e3b;
+  margin-bottom: 18px;
+}
+
+.testimonialsHeader p {
+  max-width: 750px;
+  margin: auto;
+  color: #6b7280;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* ============================
+   Grid
+============================ */
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+/* ============================
+   Card
+============================ */
+
+.testimonialCard {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(15, 118, 110, 0.18);
+}
+
+/* ============================
+   Quote Icon
+============================ */
+
+.quoteIcon {
+  width: 60px;
+  height: 60px;
+  background: #0f766e;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* ============================
+   Stars
+============================ */
+
+.stars {
+  display: flex;
+  gap: 5px;
+  color: #f59e0b;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ============================
+   Review
+============================ */
+
+.reviewText {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* ============================
+   Patient Info
+============================ */
+
+.patientInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0f766e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.patientInfo h4 {
+  color: #064e3b;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.patientInfo span {
+  color: #777;
+  font-size: 14px;
+}
+
+/* ============================
+   Mobile
+============================ */
+
+@media (max-width: 900px) {
+
+  .testimonials {
+    padding: 70px 20px;
+  }
+
+  .testimonialsHeader h2 {
+    font-size: 32px;
+  }
+
+  .testimonialsHeader p {
+    font-size: 16px;
+  }
+
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonialCard {
+    padding: 28px;
+  }
+
+  .reviewText {
+    font-size: 16px;
+  }
+
+  .avatar {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+}

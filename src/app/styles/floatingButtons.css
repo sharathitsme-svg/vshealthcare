@@ -1,0 +1,72 @@
+.floatingButtons {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.appointmentFloat,
+.whatsappFloat,
+.directionFloat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s ease;
+}
+
+.appointmentFloat {
+  background: #0f766e;
+}
+
+.appointmentFloat:hover {
+  background: #065f46;
+  transform: translateY(-3px);
+}
+
+.whatsappFloat {
+  background: #25d366;
+}
+
+.whatsappFloat:hover {
+  background: #1ebe5d;
+  transform: translateY(-3px);
+}
+
+.directionFloat {
+  background: #2563eb;
+}
+
+.directionFloat:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .floatingButtons {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .appointmentFloat,
+  .whatsappFloat,
+  .directionFloat {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .appointmentFloat span,
+  .whatsappFloat span,
+  .directionFloat span {
+    display: none;
+  }
+}

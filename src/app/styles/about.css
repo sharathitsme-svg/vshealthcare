@@ -1,0 +1,187 @@
+.about{
+    background:#f8fafc;
+    padding:90px 40px;
+}
+
+.aboutContainer{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:60px;
+    align-items:start;
+}
+
+.aboutImage{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.doctorImage{
+    border-radius:22px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.doctorImage:hover{
+    transform:translateY(-5px);
+}
+
+.doctorCard{
+    width:100%;
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.doctorCard h3{
+    color:#0f766e;
+    margin-bottom:10px;
+}
+
+.doctorCard span{
+    display:inline-block;
+    margin-top:10px;
+    background:#e6fffa;
+    color:#0f766e;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+.aboutContent h5{
+    color:#14b8a6;
+    letter-spacing:2px;
+    margin-bottom:10px;
+}
+
+.aboutContent h2{
+    color:#064e3b;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.aboutContent p{
+    color:#555;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.aboutGrid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    margin:40px 0;
+}
+
+.aboutCard{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.aboutCard:hover{
+    transform:translateY(-6px);
+}
+
+.aboutIcon{
+    font-size:34px;
+    color:#0f766e;
+    margin-bottom:15px;
+}
+
+.aboutCard h4{
+    margin-bottom:8px;
+}
+
+.expertise{
+    margin-top:20px;
+}
+
+.expertise h3{
+    color:#064e3b;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.sectionIcon{
+    color:#0f766e;
+}
+
+.expertise ul{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.expertise li{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,.06);
+}
+
+.expertise li svg{
+    color:#0f766e;
+}
+
+.missionBox{
+    margin-top:40px;
+    background:#ffffff;
+    border-left:6px solid #0f766e;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.missionBox h3{
+    color:#064e3b;
+    margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+.about{
+padding:60px 20px;
+}
+
+.aboutContainer{
+grid-template-columns:1fr;
+}
+
+.doctorImage{
+width:320px !important;
+height:auto !important;
+}
+
+.aboutGrid{
+grid-template-columns:1fr;
+}
+
+.expertise ul{
+grid-template-columns:1fr;
+}
+
+.aboutContent h2{
+font-size:34px;
+text-align:center;
+}
+
+.aboutContent h5{
+text-align:center;
+}
+
+}
