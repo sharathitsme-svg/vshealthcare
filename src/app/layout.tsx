@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Schema from "./components/Schema";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -41,13 +42,12 @@ export const metadata: Metadata = {
 
   creator: "VS Health Care",
 
-  metadataBase: new URL("https://vshealthcare.in"),
-
+  metadataBase: new URL("https://vshealthcareclinic.com"),
   openGraph: {
     title: "VS Health Care",
     description:
       "Expert Internal Medicine Consultation by Dr. B. Darshan Koel.",
-    url: "https://vshealthcare.in",
+    url: "https://vshealthcareclinic.com",
     siteName: "VS Health Care",
     locale: "en_IN",
     type: "website",
@@ -74,9 +74,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <AOSProvider />
         <Schema />
+        <GoogleAnalytics gaId="G-DY3GFC9GRN" />
 
         {children}
       </body>
     </html>
   );
-}
+} 
