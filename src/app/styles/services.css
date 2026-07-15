@@ -93,9 +93,13 @@
 }
 
 .learnMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: #0f766e;
   font-weight: 600;
   text-decoration: none;
+  transition: .3s;
 }
 
 .learnMore:hover {
@@ -118,18 +122,91 @@
   margin-top: 10px;
 }
 
-@media(max-width:900px){
+/* ===========================
+   MOBILE VERSION
+=========================== */
+
+@media (max-width:900px){
 
 .services{
-padding:60px 20px;
+    padding:45px 18px;
+}
+
+.servicesHeader{
+    margin-bottom:35px;
+}
+
+.servicesHeader h5{
+    font-size:14px;
 }
 
 .servicesHeader h2{
-font-size:34px;
+    font-size:30px;
+    line-height:1.25;
+    margin-bottom:15px;
+}
+
+.servicesHeader p{
+    font-size:16px;
+    line-height:1.7;
+    text-align:center;
+}
+
+.servicesGrid{
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.serviceCard{
+    padding:22px;
+    border-radius:18px;
+}
+
+.serviceIcon{
+    width:58px;
+    height:58px;
+    margin-bottom:15px;
+}
+
+.serviceIcon svg{
+    font-size:26px;
+}
+
+.serviceCard h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.serviceCard p{
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:16px;
+    text-align:justify;
+}
+
+.serviceList li{
+    font-size:15px;
+    margin-bottom:8px;
+}
+
+.learnMore{
+    font-size:15px;
 }
 
 .trustBanner{
-grid-template-columns:1fr;
+    margin-top:40px;
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:25px;
+}
+
+.trustBanner svg{
+    font-size:30px !important;
+}
+
+.trustBanner h4{
+    font-size:18px;
+    margin-top:8px;
 }
 
 }

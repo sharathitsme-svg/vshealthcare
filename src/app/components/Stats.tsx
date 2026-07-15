@@ -1,71 +1,79 @@
+"use client";
+
+import "../styles/stats.css";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
 export default function Stats() {
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.4,
+  });
+
   const stats = [
     {
-      number: "6+",
+      end: 6,
+      suffix: "+",
       label: "Years Experience",
     },
     {
-      number: "4000+",
+      end: 5000,
+      suffix: "+",
       label: "Patients Treated",
     },
     {
-      number: "7",
+      end: 7,
+       suffix: "+",
       label: "ICP Certifications",
     },
     {
-      number: "100%",
+      end: 100,
+      suffix: "%",
       label: "Patient-Centered Care",
     },
   ];
 
   return (
-    <section
-      style={{
-        padding: "70px 10%",
-        background: "#ffffff",
-      }}
-    >
+    <section className="statsSection">
+
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))",
-          gap: "25px",
-        }}
+        className="statsContainer"
+        ref={ref}
       >
+
         {stats.map((item) => (
+
           <div
             key={item.label}
-            style={{
-              background: "#f8fffc",
-              borderRadius: "20px",
-              padding: "35px",
-              textAlign: "center",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-              border: "1px solid #e8f5ef",
-            }}
+            className="statsCard"
           >
-            <h2
-              style={{
-                color: "#0f766e",
-                fontSize: "42px",
-                marginBottom: "10px",
-              }}
-            >
-              {item.number}
+
+            <h2 className="statsNumber">
+
+              {inView && (
+                <CountUp
+                  start={0}
+                  end={item.end}
+                  duration={2.5}
+                  separator=","
+                />
+              )}
+
+              {item.suffix}
+
             </h2>
 
-            <p
-              style={{
-                fontSize: "18px",
-                color: "#555",
-                margin: 0,
-              }}
-            >
+            <p className="statsLabel">
               {item.label}
             </p>
+
           </div>
+
         ))}
+
       </div>
+
     </section>
   );
 }

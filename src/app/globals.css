@@ -56,3 +56,130 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* ==========================================
+   VS Health Care v2.0.2 Global Improvements
+========================================== */
+
+/* Better section spacing */
+
+section{
+
+    padding-top:100px;
+
+    padding-bottom:100px;
+}
+
+/* Better card animations */
+
+.aboutCard,
+.serviceCard,
+.gallery-card,
+.certificate-card,
+.statCard,
+.infoCard,
+.doctorCard,
+.missionBox,
+.educationBox,
+.appointmentContainer,
+.mapSection{
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.aboutCard:hover,
+.serviceCard:hover,
+.gallery-card:hover,
+.certificate-card:hover,
+.statCard:hover,
+.infoCard:hover,
+.doctorCard:hover,
+.missionBox:hover,
+.educationBox:hover,
+.appointmentContainer:hover,
+.mapSection:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 24px 45px rgba(15,118,110,.16);
+}
+
+/* Better image animations */
+
+.heroImage,
+.doctorImage,
+.gallery-image,
+.certificate-image{
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease;
+}
+
+.heroImage:hover,
+.doctorImage:hover,
+.gallery-card:hover .gallery-image,
+.certificate-card:hover .certificate-image{
+
+    transform:translateY(-6px) scale(1.03);
+}
+
+/* Better button animation */
+
+.heroButton,
+.bookButton,
+.viewButton,
+.callBtn,
+.whatsappBtn,
+.directionBtn,
+.learnMore,
+.mobileBookButton,
+.mobileCallButton{
+
+    transition:
+    background .3s ease,
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.heroButton:hover,
+.bookButton:hover,
+.viewButton:hover,
+.callBtn:hover,
+.whatsappBtn:hover,
+.directionBtn:hover,
+.learnMore:hover,
+.mobileBookButton:hover,
+.mobileCallButton:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 16px 35px rgba(15,118,110,.25);
+}
+
+/* Better Focus */
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    box-shadow:0 0 0 4px rgba(20,184,166,.20);
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+section{
+
+padding-top:55px;
+
+padding-bottom:55px;
+
+}
+
+}

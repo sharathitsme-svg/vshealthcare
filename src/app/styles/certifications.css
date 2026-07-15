@@ -263,44 +263,190 @@
   background: #065f46;
 }
 
-/* =========================
-   Mobile
-========================= */
+/* =====================================
+   MOBILE OPTIMIZATION
+===================================== */
 
-@media (max-width: 900px) {
+@media (max-width:900px){
 
-  .certifications {
-    padding: 70px 20px;
-  }
+.certifications{
 
-  .certifications h2 {
-    font-size: 32px;
-  }
+    padding:50px 18px;
+}
 
-  .subtitle {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
+.sectionTag{
 
-  .statsGrid {
-    grid-template-columns: 1fr;
-  }
+    font-size:13px;
 
-  .certificate-grid {
-    grid-template-columns: 1fr;
-  }
+    letter-spacing:2px;
 
-  .educationBox {
-    padding: 25px;
-  }
+    margin-bottom:8px;
+}
 
-  .educationBox h3 {
-    font-size: 24px;
-  }
+.certifications h2{
 
-  .popupImage {
-    width: 95vw;
-    height: auto;
-  }
+    font-size:30px;
+
+    line-height:1.35;
+
+    margin-bottom:15px;
+}
+
+.subtitle{
+
+    font-size:16px;
+
+    line-height:1.75;
+
+    margin-bottom:35px;
+
+    padding:0 4px;
+}
+
+/* Statistics */
+
+.statsGrid{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+    margin-bottom:35px;
+}
+
+.statCard{
+
+    padding:22px;
+
+    border-radius:16px;
+}
+
+.statIcon{
+
+    font-size:32px;
+
+    margin-bottom:12px;
+}
+
+.statCard h3{
+
+    font-size:30px;
+}
+
+.statCard p{
+
+    font-size:16px;
+}
+
+/* Certificates */
+
+.certificate-grid{
+
+    grid-template-columns:1fr;
+
+    gap:22px;
+}
+
+.certificate-card{
+
+    border-radius:16px;
+}
+
+.certificate-image{
+
+    height:220px;
+}
+
+.badge{
+
+    top:12px;
+
+    right:12px;
+
+    font-size:12px;
+
+    padding:7px 12px;
+}
+
+.certificate-content{
+
+    padding:18px;
+}
+
+.certificate-content h3{
+
+    font-size:20px;
+
+    margin-bottom:16px;
+}
+
+.viewButton{
+
+    width:100%;
+
+    justify-content:center;
+
+    padding:14px;
+
+    font-size:15px;
+}
+
+/* Education */
+
+.educationBox{
+
+    margin-top:40px;
+
+    padding:22px;
+
+    border-radius:16px;
+}
+
+.educationBox h3{
+
+    font-size:24px;
+
+    line-height:1.4;
+
+    margin-bottom:15px;
+}
+
+.educationBox p{
+
+    font-size:16px;
+
+    line-height:1.8;
+}
+
+/* Lightbox */
+
+.lightbox{
+
+    padding:15px;
+}
+
+.popupImage{
+
+    width:100%;
+
+    max-width:95vw;
+
+    max-height:80vh;
+
+    border-radius:12px;
+}
+
+.closeButton{
+
+    width:40px;
+
+    height:40px;
+
+    right:-10px;
+
+    top:-10px;
+
+    font-size:18px;
+}
 
 }

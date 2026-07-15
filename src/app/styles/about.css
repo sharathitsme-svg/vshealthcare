@@ -152,36 +152,120 @@
     margin-bottom:15px;
 }
 
-@media(max-width:900px){
+@media (max-width: 900px) {
 
 .about{
-padding:60px 20px;
+    padding:45px 18px;
 }
 
 .aboutContainer{
-grid-template-columns:1fr;
+    grid-template-columns:1fr;
+    gap:35px;
+}
+
+.aboutImage{
+    text-align:center;
 }
 
 .doctorImage{
-width:320px !important;
-height:auto !important;
+    width:270px !important;
+    height:auto !important;
+    border-radius:18px;
 }
 
-.aboutGrid{
-grid-template-columns:1fr;
+.doctorCard{
+    width:100%;
+    max-width:300px;
+    margin:18px auto 0;
+    padding:18px;
 }
 
-.expertise ul{
-grid-template-columns:1fr;
+.doctorCard h3{
+    font-size:22px;
 }
 
-.aboutContent h2{
-font-size:34px;
-text-align:center;
+.doctorCard p{
+    font-size:15px;
+}
+
+.doctorCard span{
+    font-size:14px;
+    padding:8px 14px;
+}
+
+.aboutContent{
+    margin-top:10px;
 }
 
 .aboutContent h5{
-text-align:center;
+    text-align:center;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.aboutContent h2{
+    font-size:30px;
+    line-height:1.25;
+    text-align:center;
+    margin-bottom:18px;
+}
+
+.aboutContent p{
+    font-size:16px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+.aboutGrid{
+    grid-template-columns:1fr;
+    gap:16px;
+    margin:30px 0;
+}
+
+.aboutCard{
+    padding:20px;
+    text-align:center;
+}
+
+.aboutIcon{
+    font-size:30px;
+}
+
+.aboutCard h4{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.aboutCard p{
+    font-size:15px;
+}
+
+.expertise{
+    margin-top:35px;
+}
+
+.expertise h3{
+    justify-content:center;
+    text-align:center;
+}
+
+.expertise ul{
+    grid-template-columns:1fr;
+    gap:12px;
+}
+
+.expertise li{
+    padding:14px;
+    font-size:15px;
+}
+
+.missionBox{
+    margin-top:30px;
+    padding:20px;
+}
+
+.missionBox h3{
+    text-align:center;
 }
 
 }

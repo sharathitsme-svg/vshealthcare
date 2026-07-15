@@ -1,0 +1,146 @@
+.statsSection{
+
+    padding:70px 10%;
+
+    background:#ffffff;
+}
+
+.statsContainer{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.statsCard{
+
+    background:#f8fffc;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    border:1px solid #e8f5ef;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+}
+
+.statsCard:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(15,118,110,.15);
+}
+
+.statsNumber{
+
+    color:#0f766e;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+}
+
+.statsLabel{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin:0;
+
+    line-height:1.5;
+}
+
+/* ===========================
+   Mobile Version
+=========================== */
+
+@media(max-width:900px){
+
+.statsSection{
+
+    padding:45px 18px;
+}
+
+.statsContainer{
+
+    grid-template-columns:1fr 1fr;
+
+    gap:16px;
+}
+
+.statsCard{
+
+    padding:22px 16px;
+
+    border-radius:16px;
+}
+
+.statsNumber{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+}
+
+.statsLabel{
+
+    font-size:15px;
+
+    line-height:1.4;
+}
+
+}
+
+/* Small phones */
+
+@media(max-width:480px){
+
+.statsContainer{
+
+    grid-template-columns:1fr 1fr;
+}
+
+.statsCard{
+
+    padding:18px 12px;
+}
+
+.statsNumber{
+
+    font-size:30px;
+}
+
+.statsLabel{
+
+    font-size:14px;
+}
+
+}
+.statsCard{
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.statsCard:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(15,118,110,.18);
+}
+
+.statsNumber{
+
+    font-variant-numeric:tabular-nums;
+}

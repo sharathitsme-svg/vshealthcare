@@ -85,19 +85,90 @@
     background:#0f766e;
 }
 
+/* ===========================
+   MOBILE VERSION
+=========================== */
+
 @media(max-width:768px){
 
 .footer{
-    padding:60px 20px 20px;
+
+    padding:45px 18px 20px;
 }
 
 .footerContainer{
+
     grid-template-columns:1fr;
+
+    gap:32px;
+
     text-align:center;
 }
 
+.footerColumn h2{
+
+    font-size:26px;
+
+    margin-bottom:10px;
+}
+
+.footerColumn h3{
+
+    font-size:20px;
+
+    margin-bottom:14px;
+}
+
+.tagline{
+
+    font-size:15px;
+
+    margin-bottom:15px;
+}
+
+.footerColumn p{
+
+    font-size:15px;
+
+    line-height:1.7;
+}
+
+.footerColumn li{
+
+    margin-bottom:10px;
+
+    font-size:15px;
+}
+
 .footerBottom{
+
     flex-direction:column;
+
+    text-align:center;
+
+    margin-top:35px;
+
+    gap:18px;
+}
+
+.footerBottom p{
+
+    font-size:14px;
+}
+
+.backToTop{
+
+    width:100%;
+
+    max-width:220px;
+
+    margin:auto;
+
+    padding:14px;
+
+    font-size:15px;
+
+    border-radius:10px;
 }
 
 }

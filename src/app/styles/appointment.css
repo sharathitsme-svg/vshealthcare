@@ -9,7 +9,7 @@
     background:white;
     border-radius:20px;
     padding:50px;
-    box-shadow:0 12px 35px rgba(0,0,0,.1);
+    box-shadow:0 12px 35px rgba(0,0,0,.10);
 }
 
 .appointment h2{
@@ -23,6 +23,8 @@
     text-align:center;
     color:#555;
     margin-bottom:40px;
+    font-size:18px;
+    line-height:1.7;
 }
 
 .appointmentGrid{
@@ -44,6 +46,8 @@
     font-size:16px;
 
     outline:none;
+
+    transition:.3s;
 }
 
 .appointmentGrid input:focus,
@@ -51,6 +55,14 @@
 
     border:2px solid #0f766e;
 
+    box-shadow:0 0 0 4px rgba(15,118,110,.10);
+}
+
+.appointmentGrid textarea{
+
+    min-height:140px;
+
+    resize:vertical;
 }
 
 .appointmentGrid button{
@@ -63,7 +75,7 @@
 
     padding:18px;
 
-    border-radius:10px;
+    border-radius:12px;
 
     cursor:pointer;
 
@@ -72,7 +84,6 @@
     font-weight:600;
 
     transition:.3s;
-
 }
 
 .appointmentGrid button:hover{
@@ -80,21 +91,71 @@
     background:#065f46;
 
     transform:translateY(-2px);
-
 }
+
+/* ===========================
+   MOBILE VERSION
+=========================== */
 
 @media(max-width:768px){
 
+.appointment{
+
+    padding:45px 18px;
+}
+
 .appointmentContainer{
 
-padding:25px;
+    padding:22px;
 
+    border-radius:18px;
 }
 
 .appointment h2{
 
-font-size:30px;
+    font-size:30px;
 
+    line-height:1.25;
+
+    margin-bottom:12px;
+}
+
+.appointment p{
+
+    font-size:16px;
+
+    margin-bottom:28px;
+
+    line-height:1.7;
+}
+
+.appointmentGrid{
+
+    gap:16px;
+}
+
+.appointmentGrid input,
+.appointmentGrid textarea{
+
+    padding:14px;
+
+    font-size:15px;
+
+    border-radius:10px;
+}
+
+.appointmentGrid textarea{
+
+    min-height:120px;
+}
+
+.appointmentGrid button{
+
+    padding:16px;
+
+    font-size:16px;
+
+    border-radius:10px;
 }
 
 }

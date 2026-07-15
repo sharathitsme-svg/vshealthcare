@@ -51,22 +51,40 @@
   transform: translateY(-3px);
 }
 
-@media (max-width: 768px) {
-  .floatingButtons {
-    right: 15px;
-    bottom: 15px;
-  }
+@media (max-width:768px){
 
-  .appointmentFloat,
-  .whatsappFloat,
-  .directionFloat {
-    padding: 12px 16px;
-    font-size: 14px;
-  }
+.floatingButtons{
 
-  .appointmentFloat span,
-  .whatsappFloat span,
-  .directionFloat span {
-    display: none;
-  }
+    right:50%;
+    transform:translateX(50%);
+
+    bottom:18px;
+
+    flex-direction:row;
+
+    gap:12px;
+}
+
+.appointmentFloat,
+.whatsappFloat,
+.directionFloat{
+
+    width:54px;
+    height:54px;
+
+    padding:0;
+
+    border-radius:50%;
+
+    justify-content:center;
+}
+
+.appointmentFloat span,
+.whatsappFloat span,
+.directionFloat span{
+
+    display:none;
+
+}
+
 }
