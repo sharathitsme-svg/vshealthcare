@@ -26,7 +26,9 @@ export const metadata: Metadata = {
 
   description:
     "VS Health Care Clinic offers expert Internal Medicine consultation by Dr. B. Darshan Koel (MBBS, MD Internal Medicine) in Dilsukhnagar, Hyderabad. Specialized care for diabetes, hypertension, thyroid disorders, respiratory diseases, infectious diseases, fever, preventive health check-ups and comprehensive adult healthcare.",
-
+       verification: {
+    google: "EukkXQDQP-P7Z9CoCq-4TB7Ufrn5SpULJXFP529XY6Y",
+  },
   keywords: [
     "VS Health Care Clinic",
     "VS Health Care",
