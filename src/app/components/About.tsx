@@ -90,8 +90,8 @@ export default function About() {
 
             <div className="aboutCard">
               <FaUserMd className="aboutIcon" />
-              <h4>MD</h4>
-              <p>Internal Medicine</p>
+              <h4>MD(Internal Medicine)</h4>
+              <p>Institute of Internal Medicine, Madras Medical College</p>
             </div>
 
             <div className="aboutCard">
