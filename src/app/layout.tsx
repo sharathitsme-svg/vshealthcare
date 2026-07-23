@@ -18,14 +18,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://vshealthcareclinic.com"),
-
-  title:
-    "VS Health Care Clinic | Dr. B. Darshan Koel | Internal Medicine Specialist | Dilsukhnagar, Hyderabad",
-
+export const metadata = {
+  title: 'VS Health Care Clinic – Internal Medicine & General Physician in Dilsukhnagar, Hyderabad',
   description:
-    "VS Health Care Clinic offers expert Internal Medicine consultation by Dr. B. Darshan Koel (MBBS, MD Internal Medicine) in Dilsukhnagar, Hyderabad. Specialized care for diabetes, hypertension, thyroid disorders, respiratory diseases, infectious diseases, fever, preventive health check-ups and comprehensive adult healthcare.",
+    'VS Health Care Clinic offers expert Internal Medicine and General Physician consultation in Dilsukhnagar, Hyderabad. Consultation for diabetes, BP, thyroid disorders, fever, respiratory problems, and preventive health check-ups.',
        verification: {
     google: "EukkXQDQP-P7Z9CoCq-4TB7Ufrn5SpULJXFP529XY6Y",
   },
